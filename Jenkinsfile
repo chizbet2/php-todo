@@ -63,7 +63,7 @@ stage('Code Analysis') {
                     "files": [
                       {
                        "pattern": "php-todo.zip",
-                       "target": "chizbet2/php-todo",
+                       "target": "chizbet2",
                        "props": "type=zip;status=ready"
 
                        }
@@ -75,6 +75,11 @@ stage('Code Analysis') {
             }
 
         }
+    stage ('Deploy to Dev Environment') {
+      steps {
+    build job: 'ansible-config-mgt-2/master', parameters: [[$class: 'StringParameterValue', name: 'env', value: 'dev']], propagate: false, wait: true
+    }
+  }
 
   }
 }
