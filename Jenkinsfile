@@ -63,7 +63,7 @@ stage('Code Analysis') {
                     "files": [
                       {
                        "pattern": "php-todo.zip",
-                       "target": "chizbet2",
+                       "target": "chizbet2/php-todo",
                        "props": "type=zip;status=ready"
 
                        }
