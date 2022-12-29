@@ -17,7 +17,7 @@ pipeline {
       }
     }
 
-    stage('Prepare Dependencies') {
+    stageg('Prepare Dependencies') {
       steps {
              sh 'mv .env.sample .env'
              sh 'composer install'
