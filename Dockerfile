@@ -1,4 +1,4 @@
-FROM php
+FROM ph
 WORKDIR /app
 COPY . .
 EXPOSE 80
