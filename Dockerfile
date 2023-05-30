@@ -1,6 +1,6 @@
 FROM php:7.4-cli
 
-USER root
+USER roots
 
 WORKDIR /var/www/html
 
