@@ -30,3 +30,7 @@ COPY . .
 
 RUN composer install 
 
+
+EXPOSE 8000
+
+ENTRYPOINT [ "bash", "app.sh" ]
