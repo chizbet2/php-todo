@@ -40,7 +40,7 @@ pipeline{
          stage("Smoke Test") {
             steps {
                 script {
-                    sh "sleep 60"
+                    sh "sleep 30"
                     sh "curl -I 54.167.99.240:8000"
                 }
             }
